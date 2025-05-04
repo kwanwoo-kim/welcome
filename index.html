@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>juyeong-hong.github.io</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .profile-container {
+      display: flex;
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #111;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .profile-box {
+      width: 300px;
+      background-color: #222;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      text-align: left;
+      margin-right: 2rem;
+      flex-shrink: 0;
+      height: auto;
+      position: relative;
+    }
+
+    .profile-box-fixed {
+      height: 400px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .profile-img {
+      width: 200px; 
+      height: auto; 
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      align-self: center; 
+    }
+
+    .profile-box a {
+      color: #589f;
+      text-decoration: none;
+    }
+
+    .profile-box a:hover {
+      color: #58af;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .custom-link {
+      color: #589f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .custom-link:hover {
+      color: #580f;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="profile-container">
+
+      <div class="profile-box profile-box-fixed">
+        <img src="image.jpg" alt="Profile Picture" class="profile-img">
+        <ul>
+          <p><strong>Juyeong Hong</strong></p>
+          <p><strong><a href="mailto:juyeonghong@snu.ac.kr" class="custom-link" >juyeonghong@snu.ac.kr</a></strong></p>
+          <p><strong><a href="https://github.com/Juyeong-Hong" target="_blank" class="custom-link" >Github</a></strong></p>
+          <p><strong><a href="Juyeong-CV.pdf" target="_blank" class="custom-link">CV</a></strong></p>
+        </ul>
+      </div>
+
+
+      <div class="content">
+        <section id="about">
+          <h2>About Me</h2>
+          <p>I am a MS-PhD combined course student in Mechanical Engineering at Seoul National Univ.</p>
+          <p>My advisor is Ho-Young Kim</a> in <a href="https://fluids.snu.ac.kr/" class="custom-link">Microfluids & Soft Matter Laboratory</a>.</p>
+        </section>
+
+        <section id="research">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>Soft Matter</li>
+            <li>Solid Mechanics</li>
+            <li>Soft Robotics</li>
+          </ul>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li> - 2022.09 ~ Present : M.S. & Ph.D. in Mechanical Engineering at Seoul National University</li>
+            <li> - 2018.03 ~ 2022.08 : B.S. major in Mechanical Engineering at Gwangju Institute of Science and Technology (GIST)</li>
+          </ul>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <ul>
+            <li> - 2025.02 : Visiting student in University of Oxford (Advisor : <a href="https://people.maths.ox.ac.uk/vella/" class="custom-link">Dominic Vella</a>)</li>
+            <li> - 2019.06 ~ 2019.08 : Summer Session in UC Berkeley</li>
+          </ul>
+        </section>
+
+        <section id="awards">
+          <h2>Awards and Honors</h2>
+          <ul>
+            <li>Silver Prize, The 3rd Future Home Tech. Challenge (2024)</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
