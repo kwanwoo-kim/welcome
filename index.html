@@ -7,90 +7,128 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 40px;
+      max-width: 1000px;
       line-height: 1.6;
     }
-    header, section {
-      margin-bottom: 40px;
+
+    .container {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
     }
-    h1, h2 {
+
+    .left-panel {
+      flex: 0 0 250px;
+      text-align: center;
+    }
+
+    .left-panel img {
+      max-width: 250px;
+      border-radius: 50%;
+    }
+
+    .right-panel {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 40px;
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
     }
-    img.profile {
-      max-width: 150px;
-      border-radius: 50%;
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
 
-  <header>
+<div class="container">
+  <div class="left-panel">
     <h1>Kwanwoo Kim</h1>
-    <img src="https://github.com/user-attachments/assets/a21ba0f9-e8ea-4261-93df-ee861348dddb" alt="Photo of Kwanwoo" class="profile"/>
-    <p><a href=mailto:kwanwoo3496@snu.ac.kr">Email</a><br>
-       <a href="https://github.com/kwanwoo-kim">Github</a>
+    <img src="https://github.com/user-attachments/assets/a21ba0f9-e8ea-4261-93df-ee861348dddb" alt="Kwanwoo Kim"/>
+    <p>
+      <a href="mailto:kwanwoo3496@snu.ac.kr">Email</a><br>
+      <a href="https://github.com/kwanwoo-kim">GitHub</a>
     </p>
-  </header>
+  </div>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hello! I'm a [your job/field], passionate about [your interests]. Currently working on [your current work or goals].</p>
-  </section>
+  <div class="right-panel">
+    <section>
+      <h2>About Me</h2>
+      <p>Hello! I'm a [your job/field], passionate about [your interests]. Currently working on [your current work or goals].</p>
+    </section>
 
-  <section>
-    <h2>Research Interest</h2>
-    <ul>
-      <li><strong>Soft Robotics</strong></li>
-      <li><strong>Soft Matter</strong></li>
-      <li><strong>Emergent & Collective Behavior</strong></li>
-      <li><strong>Fluid Dynamics</strong></li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><strong>2018.09 ~ 2024.08 : B.S. major in Mechanical Engineering at Seoul National University (SNU)</strong> </li>
-      <li><strong>2024.08 ~ Present : M.S. major in Mechanical Engineering at Seoul National University (SNU)</strong> </li>
-    </ul>
-  </section>
+    <section>
+      <h2>Research Interest</h2>
+      <ul>
+        <li><strong>Soft Robotics</strong></li>
+        <li><strong>Soft Matter</strong></li>
+        <li><strong>Emergent & Collective Behavior</strong></li>
+        <li><strong>Fluid Dynamics</strong></li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Publications</h2>
-    <ul>
-      <li>"Paper Title", Authors, Conference/Journal, Year.</li>
-      <li>"Another Publication", Authors, Where Published, Year.</li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Waste-free toilet</strong>: Short description. <a href="#">[Link]</a></li>
-      <li><strong>Snapband - </strong>: What it does, tools used. <a href="#">[Link]</a></li>
-    </ul>
-  </section>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>2018.09 ~ 2024.08 : B.S. in Mechanical Engineering, Seoul National University (SNU)</strong></li>
+        <li><strong>2024.08 ~ Present : M.S. in Mechanical Engineering, Seoul National University (SNU)</strong></li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Awards</h2>
-    <ul>
-      <li>🏆 RoboCON – Organization (Year)</li>
-      <li>🎖️ K-Startup – </li>
-      <li>🎖️ KSME – LG </li>
-    </ul>
-  </section>
+    <section>
+      <h2>Publications</h2>
+      <ul>
+        <li>"Paper Title", Authors, Conference/Journal, Year.</li>
+        <li>"Another Publication", Authors, Where Published, Year.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Experiences</h2>
-    <ul>
-      <li>2019.09 ~ 2021.03 <strong>Military Interpreter</strong> Eighth Army Wightman NCO Academy @Camp Humphreys</li>
-      <li>2022.06 ~ 2022.11 <strong>Undergraduate intern</strong> at Energy & Environmental Flow Laboratory @SNU</li>
-      <li>2023.06 ~ 2024.02 <strong>Undergraduate intern</strong> at Humanoid Genaralization Laboratory @KAIST</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Waste-free toilet</strong>: Short description. <a href="#">[Link]</a></li>
+        <li><strong>Snapband</strong>: What it does, tools used. <a href="#">[Link]</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Awards</h2>
+      <ul>
+        <li>🏆 RoboCON – Organization (Year)</li>
+        <li>🎖️ K-Startup – </li>
+        <li>🎖️ KSME – LG </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experiences</h2>
+      <ul>
+        <li>2019.09 ~ 2021.03 <strong>Military Interpreter</strong> — Eighth Army Wightman NCO Academy @Camp Humphreys</li>
+        <li>2022.06 ~ 2022.11 <strong>Undergraduate Intern</strong> — Energy & Environmental Flow Lab @SNU</li>
+        <li>2023.06 ~ 2024.02 <strong>Undergraduate Intern</strong> — Humanoid Generalization Lab @KAIST</li>
+      </ul>
+    </section>
+  </div>
+</div>
 
 </body>
 </html>
