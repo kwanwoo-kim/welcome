@@ -7,35 +7,45 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0 auto;
-      padding: 40px;
-      max-width: 1000px;
+      margin: 0;
+      padding: 0;
       line-height: 1.6;
     }
 
     .container {
       display: flex;
+      height: 100vh; /* Fill the screen */
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+      box-sizing: border-box;
       gap: 40px;
-      align-items: flex-start;
     }
 
     .left-panel {
-      flex: 0 0 250px;
+      flex: 0 0 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Center vertically */
       text-align: center;
     }
 
     .left-panel img {
       max-width: 250px;
-      border-radius: 50%;
+      height: auto;
+      /* Image will now be rectangular */
     }
 
     .right-panel {
       flex: 1;
+      overflow-y: auto;
+      padding-top: 20px;
     }
 
     h1 {
       font-size: 24px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -77,7 +87,8 @@
         Hi, I’m Kwanwoo — a driven and curious individual with a deep passion for discovery, problem-solving, and hands-on research. I am particularly fascinated by <strong>emergent and collective behavior</strong>, as well as <strong>bioinspired engineering</strong> that draws from nature to solve complex challenges.  
         <br><br>
         Currently, I am pursuing my M.S. in Mechanical Engineering at Seoul National University, working in the <a href="http://fluids.snu.ac.kr" target="_blank">Microfluids & Soft Matter Laboratory</a> under the supervision of <strong>Prof. Ho-Young Kim</strong>.
-      </p>    </section>
+      </p>
+    </section>
 
     <section>
       <h2>Research Interest</h2>
