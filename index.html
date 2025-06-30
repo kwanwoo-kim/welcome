@@ -10,11 +10,12 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      background-color: #f5f3f0; /* soft beige tone */
     }
 
     .container {
       display: flex;
-      height: 100vh; /* Fill the screen */
+      overflow-y: auto;
       max-width: 1200px;
       margin: 0 auto;
       padding: 40px;
@@ -27,8 +28,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; /* Center vertically */
+      justify-content: flex-start; /* Align items to top */
       text-align: center;
+      padding-top: 60px; /* Shift content up a bit */
     }
 
     .left-panel img {
